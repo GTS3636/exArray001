@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="ex01.js"defer></script>
+    <script src="ex02.js"defer></script>
+    <script src="ex03.js"defer></script>
+    <script src="ex04.js"defer></script>
+    <script src="ex05.js"defer></script>
+    <script src="ex06.js"defer></script>
+    <script src="ex07.js"defer></script>
+    <script src="ex08.js"defer></script>
+    <script src="ex09.js"defer></script>
+    <script src="ex10.js"defer></script>
+    <title>Exercicíos</title>
+</head>
+<body>
+    <header>
+        <h1>Exercícios de array: </h1>
+    </header>
+    <main>
+        <br>
+        <div class="grid-container">
+            <div class="grid-item">
+                <div class="card">
+                <div class="mac-header">
+                  <span class="red"></span>
+                  <span class="yellow"></span>
+                  <span class="green"></span>
+                </div>
+                <span class="card-title">Exercício 1</span>
+                <p class="card-description">
+                    Faça um algoritmo que faça a o produto por 5 de todos os elementos do vetor
+                    empregando a lógica do laço “for”, dado o vetor1 = [ 1, 2, 3, 4, 5 ] e apresente na tela para o
+                    usuário. Os dados serão inseridos diretamente no código pelo programador, ou seja, não
+                    haverá entrada de dados por parte do usuário.
+                    Observação: vetor1 * 5
+                </p>
+                <span class="card-tag">For</span> <span class="card-tag">Nível: Básico</span> <span class="card-tag">Inserção pelo programador</span>
+                <div class="code-editor">
+                  <pre><code>let vetor = [ 1, 2, 3, 4, 5 ]<br><br>for(let i = 0; i < vetor.length; i++) {<br>   vetor[i] = vetor[i] * 5<br>}<br><br>console.log(vetor)</code></pre>
+                </div><br>
+                <div style="text-align: center;">
+                    <button id="iniciarEx01">Iniciar</button>
+                </div>
+                <div id="res01"></div>
+              </div>
+            </div>
+            <div class="grid-item">
+                <div class="card">
+                <div class="mac-header">
+                  <span class="red"></span>
+                  <span class="yellow"></span>
+                  <span class="green"></span>
+                </div>
+                <span class="card-title">Exercício 2</span>
+                <p class="card-description">
+                    Refaça o algoritmo, onde o número escalar a ser realizado o produto é digitado pelo
+                    usuário no front end (HTML).
+                    Observação: vetor1 * (número digitado)
+                </p>
+                <span class="card-tag">For</span> <span class="card-tag">Nível: Básico</span> <span class="card-tag">Inserção pelo usuário</span>
+                <div class="code-editor">
+                  <pre><code>let vetor2 = [ 1, 2, 3, 4, 5 ] <br><br>let num2 = parseFloat(document.getElementById('num2').value)<br><br>for(let i = 0; i < vetor2.length; i++) {<br>        vetor2[i] *= num2<br>}<br><br>res2.innerHTML = `O vetor multiplicado por ${num2} é: ${vetor2}`<br>console.log(vetor2)</code></pre>
+                </div><br>
+                <label for="inputCode2">Digite um número:</label>
+                <input class="input" id="inputCode2" name="number" placeholder="Número..." type="number">
+                <button id="ativarCodeEx02">Inserir</button>
+                <br><br>
+                <div id="res02"></div>
+              </div>
+            
+            </div>
+            <div class="grid-item">
+                
+                <div class="card">
+                <div class="mac-header">
+                  <span class="red"></span>
+                  <span class="yellow"></span>
+                  <span class="green"></span>
+                </div>
+                <span class="card-title">Exercício 3</span>
+                <p class="card-description">
+                    Faça um algoritmo que faça a soma do escalar 4 de todos os elementos do vetor
+                    empregando a lógica do laço “for”, dado o vetor1 = [ 1, 2, 3, 4, 5 ] e apresente na tela para o
+                    usuário. Os dados serão inseridos diretamente no código pelo programador, ou seja, não
+                    haverá entrada de dados por parte do usuário.
+                    Observação: vetor1 + 4
+                </p>
+                <span class="card-tag">For</span> <span class="card-tag">Nível: Básico</span> <span class="card-tag">Inserção pelo programador</span>
+                <div class="code-editor">
+                  <pre><code>let vetor = [ 1, 2, 3, 4, 5 ]<br><br>for(let i = 0; i < vetor.length; i++) {<br>   vetor[i] = vetor[i] + 4<br>}<br><br>console.log(vetor)</code></pre>
+                </div><br>
+                <div style="text-align: center;">
+                    <button id="iniciarEx03">Iniciar</button>
+                </div>
+                <div id="res03"></div>
+              </div>
+            
+            </div>
+            <div class="grid-item">
+              
+              <div class="card">
+              <div class="mac-header">
+                <span class="red"></span>
+                <span class="yellow"></span>
+                <span class="green"></span>
+              </div>
+              <span class="card-title">Exercício 4</span>
+              <p class="card-description">
+                Refaça o algoritmo, onde o número escalar a ser realizado a soma é digitado pelo usuário
+                no front end (HTML).
+                Observação: vetor1 + (número digitado)
+              </p>
+              <span class="card-tag">For</span> <span class="card-tag">Nível: Básico</span> <span class="card-tag">Inserção pelo usuário</span>
+              <div class="code-editor">
+                <pre><code>let vetor4 = [ 1, 2, 3, 4, 5 ] <br><br>let num4 = parseFloat(document.getElementById('num4').value)<br><br>for(let i = 0; i < vetor4.length; i++) {<br>        vetor4[i] += num4<br>}<br><br>res4.innerHTML = `O vetor multiplicado por ${num4} é: ${vetor4}`<br>console.log(vetor4)</code></pre>
+              </div><br>
+              <label for="inputCode4">Digite um número:</label>
+              <input class="input" id="inputCode4" placeholder="Número..." type="number">
+              <button id="ativarCodeEx04">Inserir</button>
+              <br><br>
+              <div id="res04"></div>
+            </div>
+          
+          </div>
+            <div class="grid-item">
+              
+              <div class="card">
+              <div class="mac-header">
+                <span class="red"></span>
+                <span class="yellow"></span>
+                <span class="green"></span>
+              </div>
+              <span class="card-title">Exercício 5</span>
+              <p class="card-description">
+                Faça um algoritmo que leia os dados de 2 vetores de 5 elementos digitados pelo usuário
+                pelo front end e faça o produto entre estes vetores.
+                Observação: vetor1 * vetor2
+              </p>
+              <span class="card-tag">For</span> <span class="card-tag">Nível: Médio</span> <span class="card-tag">Inserção pelo usuário</span>
+              <div class="code-editor">
+                <pre><code>let ativarCodeEx05 = document.getElementById('ativarCodeEx05')<br>let res5 = document.getElementById('res05')<br><br>let array1 = []<br>let array2 = []<br>let multi = 0<br>let multiArray = []<br><br>ativarCodeEx05.addEventListener('click', () => {<br><br>    let vetor1 = parseFloat(document.getElementById('inputCode51').value)<br>    let vetor2 = parseFloat(document.getElementById('inputCode52').value)<br><br>    if ((vetor1 == null) || (vetor1 == '') || (isNaN(vetor1)) || (vetor2 == null) || (vetor2 == '') || (isNaN(vetor2))) {<br>        alert('Digite um número válido!')<br>        return<br>    } else{<br>    if(array1.length < 5){<br>        array1.push(vetor1)<br>    }<br>    if(array2.length < 5){<br>        array2.push(vetor2)<br>    }<br>    if(array1.length < 5 && array2.length < 5){<br>        res5.innerHTML = `Os vetores digitados até agora foram: ${array1} e ${array2}`;<br>    }<br>    if(array1.length > 5){<br>        array1.shift()<br>    }<br>    if(array1.length == 5 && array2.length == 5){<br>        for(let i = 0; i < array1.length; i++){<br>            multi = array1[i] * array2[i]<br>            multiArray[i] = array1[i] * array2[i]<br>        } <br>        res5.innerHTML = `Os vetores digitados foram: VETOR 1 ${array1} e VETOR 2 ${array2} <br>`<br>        res5.innerHTML += `O total multiplicado é: ${multi} <br>`<br>        res5.innerHTML += `O total multiplicado singurlamente é: ${multiArray}`<br>    }<br>}<br>})<br></code></pre>
+              </div><br>
+              <label for="inputCode51">Digite um o primeiro vetor (envie ao menos 5 elementos, 1 por vez):</label>
+              <input class="input" id="inputCode51" placeholder="Vetor..." type="number"><br><br>
+              <label for="inputCode52">Digite um o segundo vetor (envie ao menos 5 elementos, 1 por vez):</label>
+              <input class="input" id="inputCode52" placeholder="Vetor..." type="number"><br><br>
+              <button id="ativarCodeEx05">Inserir</button>
+              <br><br>
+              <div id="res05"></div>
+            </div>
+          
+          </div>
+          <div class="grid-item">
+
+            <div class="card">
+              <div class="mac-header">
+                <span class="red"></span>
+                <span class="yellow"></span>
+                <span class="green"></span>
+              </div>
+              <span class="card-title">Exercício 6</span>
+              <p class="card-description">
+                Faça um algoritmo que leia os dados de 2 vetores de 5 elementos digitados pelo usuário
+                e faça a subtração entre estes vetores.
+                Observação: vetor1 - vetor2
+              </p>
+              <span class="card-tag">For</span> <span class="card-tag">Nível: Médio</span> <span class="card-tag">Inserção pelo usuário</span>
+              <div class="code-editor">
+                <pre><code>let ativarCodeEx06 = document.getElementById('ativarCodeEx06')<br>let res5 = document.getElementById('res05')<br><br>let array1 = []<br>let array2 = []<br>let sub = 0<br>let subArray = []<br><br>ativarCodeEx06.addEventListener('click', () => {<br><br>    let vetor1 = parseFloat(document.getElementById('inputCode51').value)<br>    let vetor2 = parseFloat(document.getElementById('inputCode52').value)<br><br>    if ((vetor1 == null) || (vetor1 == '') || (isNaN(vetor1)) || (vetor2 == null) || (vetor2 == '') || (isNaN(vetor2))) {<br>        alert('Digite um número válido!')<br>        return<br>    } else{<br>    if(array1.length < 5){<br>        array1.push(vetor1)<br>    }<br>    if(array2.length < 5){<br>        array2.push(vetor2)<br>    }<br>    if(array1.length < 5 && array2.length < 5){<br>        res5.innerHTML = `Os vetores digitados até agora foram: ${array1} e ${array2}`<br>    }<br>    if(array1.length > 5){<br>        array1.shift()<br>    }<br> if(array2.length > 5){<br>        array2.shift()<br>    }<br>    if(array1.length == 5 && array2.length == 5){<br>        for(let i = 0; i < array1.length; i++){<br>            sub = array1[i] - array2[i]<br>            subArray[i] = array1[i] - array2[i]<br>        } <br>        res5.innerHTML = `Os vetores digitados foram: VETOR 1 ${array1} e VETOR 2 ${array2} <br>`<br>        res5.innerHTML += `O total subtraido é: ${sub} <br>`<br>        res5.innerHTML += `O total subtraido singurlamente é: ${subArray}`<br>    }<br>}<br>})<br></code></pre>
+              </div><br>
+              <label for="inputCode61">Digite o primeiro vetor (envie ao menos 5 elementos, 1 por vez):</label>
+              <input class="input" id="inputCode61" placeholder="Vetor..." type="number"><br><br>
+              <label for="inputCode62">Digite o segundo vetor (envie ao menos 5 elementos, 1 por vez):</label>
+              <input class="input" id="inputCode62" placeholder="Vetor..." type="number"><br><br>
+              <button id="ativarCodeEx06">Inserir</button>
+              <br><br>
+              <div id="res06"></div>
+
+            </div>
+          </div>
+          <div class="grid-item">
+
+            <div class="card">
+              <div class="mac-header">
+                <span class="red"></span>
+                <span class="yellow"></span>
+                <span class="green"></span>
+              </div>
+              <span class="card-title">Exercício 7</span>
+              <p class="card-description">
+                Faça um algoritmo que leia os dados digitados pelo usuário a partir do front end (HTML)
+                em um vetor de 7 elementos e faça a soma destes elementos internos do vetor. Apresente o
+                resultado na tela.
+                Observação: somar todos os elementos internos do vetor, exemplo [1,2,3,4,5,6,7] = 28
+              </p>
+              <span class="card-tag">forEach()</span> <span class="card-tag">Nível: Médio</span> <span class="card-tag">Inserção pelo usuário</span>
+              <div class="code-editor">
+                <pre><code>let ativarCodeEx07 = document.getElementById('ativarCodeEx07')<br>let res7 = document.getElementById('res07')<br><br>let array = []<br>let soma = 0<br><br>ativarCodeEx06.addEventListener('click', () => {<br>    let vetor = parseFloat(document.getElementById('inputCode51').value)<br>    if ((vetor == null) || (vetor == '') || (isNaN(vetor))) {<br>        alert('Digite um número válido!')<br>        return<br>    } else{<br>    if(array.length < 7){<br>        array.push(vetor)<br>    }<br>    if(array.length < 7){<br>        res7.innerHTML = `Os vetores digitados até agora foram: ${array}`<br>    }<br>    if(array.length > 7){<br>        array.shift()<br>    }<br>    if(array.length == 7){<br>        array.forEach((item) => {<br>            soma += item<br>        })<br>        res7.innerHTML = `Os vetores digitados foram: VETOR 1 ${array}<br>`<br>        res7.innerHTML += `O total somado é: ${soma} <br>`<br>    } <br>}<br>})<br></code></pre>
+              </div><br>
+              <label for="inputCode7">Digite o vetor (envie ao menos 7 elementos, 1 por vez):</label>
+              <input class="input" id="inputCode7" name="number" placeholder="Vetor..." type="number">
+              <button id="ativarCodeEx07">Inserir</button>
+              <br><br>
+              <div id="res07"></div>
+            </div>
+
+          </div>
+          <div class="grid-item">
+
+            <div class="card">
+              <div class="mac-header">
+                <span class="red"></span>
+                <span class="yellow"></span>
+                <span class="green"></span>
+              </div>
+              <span class="card-title">Exercício 8</span>
+              <p class="card-description">
+                Faça um algoritmo que leia os dados de um vetor de 5 elementos a partir do front end
+                (HTML) e escreva os elementos em ordem inversa.
+                Observação: exemplo vetor = [1,2,3,4,5] o programa escreve vetor = [5,4,3,2,1]
+              </p>
+              <span class="card-tag">For</span> <span class="card-tag">Nível: Médio</span> <span class="card-tag">Inserção pelo usuário</span> <span class="card-tag">Ordenação</span> <span class="card-tag">inserction()</span> <span class="card-tag">Ordenação decrescente</span>
+              <div class="code-editor">
+                <pre><code>let ativarCodeEx08 = document.getElementById('ativarCodeEx08')<br>let res8 = document.getElementById('res08')<br><br>let array8 = []<br>ativarCodeEx08.addEventListener('click', () => {<br>    let vetor = parseFloat(document.getElementById('inputCode8').value)<br>    if ((vetor == null) || (vetor == '') || (isNaN(vetor))) {<br>        alert('Digite um número válido!')<br>        return<br>    } else{<br>    if(array8.length < 7){<br>        array8.push(vetor)<br>    }<br>    if(array8.length < 7){<br>        res8.innerHTML = `O vetor digitado até agora foi: ${array8}`<br>    }<br>    if(array8.length == 7){<br>        let valor_atual = 0<br>        for(i=1;i<array8.length;i++){<br>            let j = i - 1<br>            valor_atual = array8[i]<br>            while(j>=0 && valor_atual > array8[j]){<br>                array8[j+1]=array8[j]<br>                j--<br>            }<br>            array8[j+1]=valor_atual<br>        }<br>        res8.innerHTML = `O o vetor ordenado fica: é: ${array8} <br>`<br>    } <br>}<br>})<br></code></pre>
+              </div><br>
+              <label for="inputCode8">Digite o vetor (envie ao menos 5 elementos, 1 por vez):</label>
+              <input class="input" id="inputCode8" name="number" placeholder="Vetor..." type="number">
+              <button id="ativarCodeEx08">Inserir</button>
+              <br><br>
+              <div id="res08"></div>
+
+            </div>
+          </div>
+          <div class="grid-item">
+
+            <div class="card">
+              <div class="mac-header">
+                <span class="red"></span>
+                <span class="yellow"></span>
+                <span class="green"></span>
+              </div>
+              <span class="card-title">Exercício 9</span>
+              <p class="card-description">
+                Faça um programa onde o usuário insere pelo teclado, a partir do front end (HTML), 5
+                números inteiros em um intervalo de 1 à 10 que sejam guardados em um array. A partir dos
+                valores armazenados no array, e faça a média aritmética desses números, exibindo o
+                resultado para o usuário. Requisito: o programa deve ter 2 funções separadas, uma para
+                inserir os valores e outra para realizar a média aritmética.
+              </p>
+              <span class="card-tag">For</span> <span class="card-tag">Nível: Médio</span> <span class="card-tag">Inserção pelo usuário</span>
+              <div class="code-editor">
+                <pre><code>let ativarCodeEx09 = document.getElementById('ativarCodeEx09') <br>let res9 = document.getElementById('res09')<br><br>let array9 = []<br>let soma9 = 0<br>let media = 0<br><br>ativarCodeEx09.addEventListener('click', () => {<br>    let vetor = parseFloat(document.getElementById('inputCode9').value)<br>    if ((vetor == null) || (vetor == '') || (isNaN(vetor)) || (vetor < 0) || (vetor > 10)) {<br>        alert('Digite um número válido!')<br>        return<br>    } else{<br>    if(array9.length < 7){<br>        array9.push(vetor)<br>    }<br>    if(array9.length < 7){<br>        res9.innerHTML = `O vetor digitado até agora foi: ${array9}`<br>    }<br>    if(array9.length == 7){<br>        mediaAritmetica()<br>        res9.innerHTML = `O o vetor ordenado fica: ${media} <br>`<br>    } <br>}<br>})<br>function mediaAritmetica(){<br>    array9.forEach(e => {<br>        soma += e<br>    })<br>    media = soma / array9.length<br>}<br></code></pre>
+              </div><br>
+              <label for="inputCode9">Digite o vetor (envie ao menos 5 elementos, 1 por vez):</label>
+              <input class="input" id="inputCode9" name="number" placeholder="Vetor..." type="number">
+              <button id="ativarCodeEx09">Inserir</button>
+              <br><br>
+              <div id="res09"></div>
+
+            </div>
+          </div>
+          <div class="grid-item">
+
+            <div class="card">
+              <div class="mac-header">
+                <span class="red"></span>
+                <span class="yellow"></span>
+                <span class="green"></span>
+              </div>
+              <span class="card-title">Exercício 10</span>
+              <p class="card-description">
+                Faça um programa onde são gerados 5 números inteiros aleatórios em um intervalo de
+                0 à 9 que sejam guardados em um array. A partir dos valores armazenados no array,
+                coloque os valores em ordem crescente e depois em ordem decrescente.
+              </p>
+              <span class="card-tag">For</span> <span class="card-tag">Nível: Básico</span> <span class="card-tag">Inserção pelo programador</span> <span class="card-tag">Números Aleatórios</span> <span class="card-tag">Ordenação</span> <span class="card-tag">inserction()</span> <span class="card-tag">Ordenação crescente e decrescente</span>
+              <div class="code-editor">
+                <pre><code>let array10 = []<br>let res10 = document.getElementById("res10")<br>let iniciarEx10 = document.getElementById('iniciarEx10')<br>iniciarEx10.addEventListener('click', () => {<br>    for(let i = 0; i< 5; i++){<br>        array10[i] = gerarAleatorio(9, 0)<br>    }<br>    res10.innerHTML = `<br>O vetor criado foi: ${array10} <br>`<br>    ordenarCrescente(array10)<br>    res10.innerHTML += `O vetor ordenado de forma crescente fica: ${array10} <br>`<br>    ordenarDecrescente(array10)<br>    res10.innerHTML += `O vetor ordenado de forma decrescente fica: ${array10} <br>`<br>})<br>function gerarAleatorio(max, min){<br>    return Math.floor(Math.random() * (max - min + 1) + min)<br>}<br>function ordenarCrescente(array10){<br>    let valor_atual = 0<br>        for(i=1;i<.array10.length;i++){<br>            let j = i - 1<br>            valor_atual = array10[i]<br>            while(j>=0 && valor_atual < array10[j]){<br>                array10[j+1]=array10[j]<br>                j--<br>            }<br>            array10[j+1]=valor_atual<br>        }<br>}<br>function ordenarDecrescente(array10){<br>    let valor_atual = 0<br>        for(i=1;i<.array10.length;i++){ <br>            let j = i - 1<br>            valor_atual = array10[i]<br>            while(j>=0 && valor_atual > array10[j]){<br>                array10[j+1]=array10[j]<br>                j--<br>            }<br>            array10[j+1]=valor_atual<br>        }<br>}</code></pre>
+              </div><br>
+              <div style="text-align: center;">
+                  <button id="iniciarEx10">Iniciar</button>
+              </div>
+              <div id="res10"></div>
+            </div>
+
+          </div>
+        </div>
+        
+          
+    </main>
+</body>
+</html>
